@@ -16,7 +16,7 @@ const AppliedJobsDetails = ({ job }) => {
                         <button className="font-bold border border-indigo-600 py-1 px-4 text-indigo-600 rounded-md hover:text-white hover: hover:bg-indigo-500">{remote_or_onsite}</button>
                         <button className="font-bold border border-indigo-600 py-1 px-4 text-indigo-600 rounded-md hover:text-white hover: hover:bg-indigo-500">{job_type}</button>
                     </div>
-                    <div className="flex gap-4 mt-1 text-slate-500">
+                    <div className="flex gap-6 mt-1 text-slate-500">
                         <p className="flex items-center gap-1 mx-auto"><CiLocationOn className="text-xl font-bold text-gray-600"></CiLocationOn> {location}</p>
                         <p className="flex items-center gap-1 ml-0 pl-0"><CiDollar className="text-xl font-bold text-gray-600"></CiDollar> {salary}</p>
                     </div>
