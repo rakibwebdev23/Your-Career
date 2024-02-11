@@ -6,13 +6,6 @@ const AppliedJobsDetails = ({ job }) => {
     const { company_name, job_title, salary, location, logo, remote_or_onsite, job_type } = job;
     return (
         <div>
-            <details className="dropdown">
-                <summary className="m-1 btn">open or close</summary>
-                <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
-                    <li><a>Item 1</a></li>
-                    <li><a>Item 2</a></li>
-                </ul>
-            </details>
             <div className="items-center justify-between p-4 border rounded-md gap-6 mt-6 bg-gray-100 flex drop-shadow-lg">
                 <div className="flex gap-6 mr-0">
                     <div>
