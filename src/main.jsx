@@ -13,6 +13,10 @@ import AppliedJobs from './components/AppliedJobs/AppliedJobs.jsx';
 import Statistics from './components/Statistics/Statistics.jsx';
 import Blogs from './components/Blogs/Blogs.jsx';
 import ViewDetails from './components/ViewDetails/ViewDetails.jsx';
+import Login from './pages/Login/Login.jsx';
+import Register from './pages/Register/Register.jsx';
+import UserProvider from './provider/UserProvider/UserProvider.jsx';
+import PrivateRouter from './components/PrivateRouter/PrivateRouter.jsx';
 
 const router = createBrowserRouter([
   {
@@ -21,7 +25,7 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
-        path:'/',
+        path: '/',
         element: <Home></Home>
       },
       {
@@ -30,8 +34,8 @@ const router = createBrowserRouter([
       },
       {
         path: '/applied',
-        element: <AppliedJobs></AppliedJobs>,
-        loader: () => fetch ('/public/jobs.json')
+        element: <PrivateRouter><AppliedJobs></AppliedJobs></PrivateRouter>,
+        loader: () => fetch('/public/jobs.json')
       },
       {
         path: '/blogs',
@@ -39,15 +43,25 @@ const router = createBrowserRouter([
       },
       {
         path: '/job/:id',
-        element: <ViewDetails></ViewDetails>,
+        element: <PrivateRouter><ViewDetails></ViewDetails></PrivateRouter>,
         loader: () => fetch('/public/jobs.json')
       },
+      {
+        path: "/login",
+        element: <Login></Login>
+      },
+      {
+        path: "/register",
+        element: <Register></Register>
+      }
     ]
   }
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <UserProvider>
+      <RouterProvider router={router} />
+    </UserProvider>
   </React.StrictMode>,
 )

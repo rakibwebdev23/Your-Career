@@ -1,11 +1,34 @@
-import { NavLink } from "react-router-dom";
+import { useContext } from "react";
+import { Link, NavLink } from "react-router-dom";
+import { UserContext } from "../../provider/UserProvider/UserProvider";
 
 const Header = () => {
+
+    const { user, logOut } = useContext(UserContext);
+
+    const handleLogOut = () => {
+        logOut()
+            .then(() => {
+                console.log("User Logout successfully");
+            })
+            .catch(error => {
+                console.log(error);
+            })
+    }
+
     const links = <>
         <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="/applied">Applied Jobs</NavLink></li>
         <li><NavLink to="/statistics">Statistics</NavLink></li>
         <li><NavLink to="/blogs">Blogs</NavLink></li>
+        <>
+
+            {
+                user ?
+                    <li><Link><button onClick={handleLogOut}>LogOut</button></Link></li> :
+                    <li><NavLink to="/login">Login</NavLink></li>
+            }
+        </>
     </>
     return (
         <div className="navbar bg-base-100">
@@ -22,8 +45,8 @@ const Header = () => {
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
-                {links}
-                    
+                    {links}
+
                 </ul>
             </div>
             <div className="navbar-end">
