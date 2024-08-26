@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import { getJobInStorage } from "../../utilities/storage";
 import AppliedJobsDetails from "../AppliedJobsDetails/AppliedJobsDetails";
+import { Helmet } from "react-helmet";
 
 const AppliedJobs = () => {
     const totalJobs = useLoaderData();
@@ -41,6 +42,7 @@ const AppliedJobs = () => {
 
     return (
         <div>
+            <Helmet><title>Applied Job</title></Helmet>
             <div className="bg-gray-50 rounded-t-md h-60  flex items-center">
                 <p className="mx-auto text-2xl font-bold">Applied Jobs</p>
             </div>

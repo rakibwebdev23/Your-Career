@@ -1,14 +1,14 @@
 [
      {
       "id": 1,
-      "logo": "../src/assets/logo/ms.webp",
+      "logo": "https://imgur.com/7JKnaDj.png",
       "job_title": "Technical Database Engineer",
       "company_name": "Microsoft",
       "remote_or_onsite": "Remote",
       "location": "Redmond, Washington, USA",
       "job_type": "Full Time",
       "salary": "100k-150k",
-      "job_description": " A UI/UX (User Interface/User Experience) designer is responsible for designing and creating engaging and effective interfaces for software and web applications. This includes designing the layout, visual design, and interactivity of the user interface.",
+      "job_description": "A UI/UX (User Interface/User Experience) designer is responsible for designing and creating engaging and effective interfaces for software and web applications. This includes designing the layout, visual design, and interactivity of the user interface.",
       "job_responsibility": "Collaborating with cross-functional teams: UI/UX designers often work closely with other teams, including product management, engineering, and marketing, to ensure that the user interface is aligned with business and technical requirements. You will need to be able to effectively communicate your design ideas and gather feedback from other team members.",
       "educational_requirements": "Bachelor degree to complete any reputational university.",
       "experiences": "2-3 Years in this field.",
@@ -20,7 +20,7 @@
     },
     {
         "id": 2,
-        "logo": "../src/assets/logo/netflix.png",
+        "logo": "https://imgur.com/q9SEhDr.png", 
         "job_title": "Senior Product Designer",
         "company_name": "Netflix",
         "remote_or_onsite": "Onsite",
@@ -39,7 +39,7 @@
       },
       {
         "id": 3,
-        "logo": "../src/assets/logo/google.png",
+        "logo": "https://imgur.com/bDiPyMM.png",
         "job_title": "Software Engineer",
         "company_name": "Google LLC",
         "remote_or_onsite": "Onsite",
@@ -58,7 +58,7 @@
       },
       {
         "id": 4,
-        "logo": "../src/assets/logo/teslanew.png",
+        "logo": "https://imgur.com/qXDtAQI.png",
         "job_title": "Software Engineer",
         "company_name": "Tesla",
         "remote_or_onsite": "Onsite",
@@ -77,7 +77,7 @@
       },
       {
         "id": 5,
-        "logo": "../src/assets/logo/samsung.png",
+        "logo": "https://imgur.com/Koi2X0Q.png",
         "job_title": "Technical Database Engineer",
         "company_name": "Samsung",
         "remote_or_onsite": "Remote",
@@ -96,7 +96,7 @@
       },
       {
         "id": 6,
-        "logo": "../src/assets/logo/grameen.png",
+        "logo": "https://imgur.com/NbP1PM5.png",
         "job_title": "Senior Product Designer",
         "company_name": "Grameen Phone",
         "remote_or_onsite": "Remote",
@@ -111,6 +111,44 @@
           "phone": "01750-00 00 00",
           "email": "info@gmail.com",
           "address": "Basundhara, Dhaka - 1229, Bangladesh"
+        }
+      },
+      {
+        "id": 7,
+        "logo": "https://imgur.com/bG5hveO.png",
+        "job_title": "Web Designer",
+        "company_name": "Amazon",
+        "remote_or_onsite": "Remote",
+        "location": "Seattle, Washington, United States",
+        "job_type": "Full Time",
+        "salary": "100k-150k",
+        "job_description": "A UI/UX (User Interface/User Experience) designer is responsible for designing and creating engaging and effective interfaces for software and web applications. This includes designing the layout, visual design, and interactivity of the user interface.",
+        "job_responsibility": "Collaborating with cross-functional teams: UI/UX designers often work closely with other teams, including product management, engineering, and marketing, to ensure that the user interface is aligned with business and technical requirements. You will need to be able to effectively communicate your design ideas and gather feedback from other team members.",
+        "educational_requirements": "Bachelor degree to complete any reputational university.",
+        "experiences": "2-3 Years in this field.",
+        "contact_information": {
+          "phone": "01750-00 00 00",
+          "email": "info@gmail.com",
+          "address": "Menlo Park, California, United States"
+        }
+      },
+      {
+        "id": 8,
+        "logo": "https://imgur.com/DLNMM8t.png",
+        "job_title": "Senior Software Engineer",
+        "company_name": "Meta",
+        "remote_or_onsite": "Remote",
+        "location": "Menlo Park, California, United States",
+        "job_type": "Full Time",
+        "salary": "100k-150k",
+        "job_description": "A UI/UX (User Interface/User Experience) designer is responsible for designing and creating engaging and effective interfaces for software and web applications. This includes designing the layout, visual design, and interactivity of the user interface.",
+        "job_responsibility": "Collaborating with cross-functional teams: UI/UX designers often work closely with other teams, including product management, engineering, and marketing, to ensure that the user interface is aligned with business and technical requirements. You will need to be able to effectively communicate your design ideas and gather feedback from other team members.",
+        "educational_requirements": "Bachelor degree to complete any reputational university.",
+        "experiences": "2-3 Years in this field.",
+        "contact_information": {
+          "phone": "01750-00 00 00",
+          "email": "info@gmail.com",
+          "address": "Menlo Park, California, United States"
         }
       }
   

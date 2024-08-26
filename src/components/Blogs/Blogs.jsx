@@ -1,7 +1,10 @@
+import { Helmet } from "react-helmet";
+
 const Blogs = () => {
     return (
         <div>
-            <p>this is the blog pages</p>
+            <Helmet><title>Blogs</title></Helmet>
+            <p>This is the blog pages</p>
         </div>
     );
 };

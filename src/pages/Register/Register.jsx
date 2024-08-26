@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { UserContext } from "../../provider/UserProvider/UserProvider";
 import { FaGoogle } from "react-icons/fa";
+import { Helmet } from "react-helmet";
 
 
 const Register = () => {
@@ -55,6 +56,7 @@ const Register = () => {
 
     return (
         <div>
+            <Helmet><title>Register</title></Helmet>
             <h2 className="text-4xl font-bold text-center mt-10">Please Register</h2>
             <form onSubmit={handleRegister} className="card-body lg:w-1/2 md:w-3/4 mx-auto">
                 <div className="form-control">
