@@ -5,11 +5,12 @@ import 'react-toastify/dist/ReactToastify.css';
 import { Helmet } from "react-helmet";
 
 const ViewDetails = () => {
-    const jobs = useLoaderData();
+
+    const jobsData = useLoaderData();
     const { id } = useParams();
     const idIt = parseInt(id);
-    const job = jobs.find(job => job.id === idIt);
-    const { job_description, job_responsibility, educational_requirements, experiences, salary, job_title, logo, contact_information } = job;
+    const jobs = jobsData.find(job => job.id === idIt);
+    const { job_description, job_responsibility, educational_requirements, experiences, salary, job_title, logo, contact_information } = jobs;
 
     const handleJobApplication = () => {
         savedJobInStorage(idIt);
@@ -45,7 +46,7 @@ const ViewDetails = () => {
                             </div>
 
                         </div>
-                        <div className="">
+                        <div>
                             <button onClick={handleJobApplication} className="bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 py-3 mb-0 w-full rounded-b-lg text-white font-semibold text-xl">Apply Now</button>
                         </div>
                     </div>

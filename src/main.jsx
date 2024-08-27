@@ -33,8 +33,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/applied',
-        element: <PrivateRouter><AppliedJobs></AppliedJobs></PrivateRouter>,
-        loader: () => fetch('jobs.json')
+        element: <PrivateRouter><AppliedJobs></AppliedJobs></PrivateRouter>
       },
       {
         path: '/blogs',
@@ -59,8 +58,10 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <UserProvider>
-      <RouterProvider router={router} />
-    </UserProvider>
+    <div className='max-w-screen-xl mx-auto mt-2'>
+      <UserProvider>
+        <RouterProvider router={router} />
+      </UserProvider>
+    </div>
   </React.StrictMode>,
 )

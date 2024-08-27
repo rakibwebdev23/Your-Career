@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { UserContext } from "../../provider/UserProvider/UserProvider";
+import img from "../../assets/logo/rakib.png"
 
 const Header = () => {
 
@@ -41,7 +42,7 @@ const Header = () => {
                         {links}
                     </ul>
                 </div>
-                <NavLink className="btn btn-ghost font-bold text-2xl">Your Career</NavLink>
+                <NavLink className="transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 " to="/"> <img className="w-20" src={img} alt="" /> </NavLink>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
