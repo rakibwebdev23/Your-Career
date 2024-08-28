@@ -33,8 +33,12 @@ const router = createBrowserRouter([
       },
       {
         path: '/applied',
+<<<<<<< HEAD
         element: <AppliedJobs></AppliedJobs>
         // element: <PrivateRouter><AppliedJobs></AppliedJobs></PrivateRouter>
+=======
+        element: <PrivateRouter><AppliedJobs></AppliedJobs></PrivateRouter>
+>>>>>>> 4e1f47a41440e32d32df59b659ee13886608f24f
       },
       {
         path: '/blogs',
@@ -42,8 +46,12 @@ const router = createBrowserRouter([
       },
       {
         path: '/job/:id',
+<<<<<<< HEAD
         // element: <PrivateRouter><ViewDetails></ViewDetails></PrivateRouter>,
         element: <ViewDetails></ViewDetails>,
+=======
+        element: <PrivateRouter><ViewDetails></ViewDetails></PrivateRouter>,
+>>>>>>> 4e1f47a41440e32d32df59b659ee13886608f24f
         loader: () => fetch('jobs.json')
       },
       {
