@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-// import App from './App.jsx'
 import './index.css'
 import {
   createBrowserRouter,
@@ -34,8 +33,8 @@ const router = createBrowserRouter([
       },
       {
         path: '/applied',
-        element: <PrivateRouter><AppliedJobs></AppliedJobs></PrivateRouter>,
-        loader: () => fetch('/public/jobs.json')
+        element: <AppliedJobs></AppliedJobs>
+        // element: <PrivateRouter><AppliedJobs></AppliedJobs></PrivateRouter>
       },
       {
         path: '/blogs',
@@ -43,8 +42,9 @@ const router = createBrowserRouter([
       },
       {
         path: '/job/:id',
-        element: <PrivateRouter><ViewDetails></ViewDetails></PrivateRouter>,
-        loader: () => fetch('/public/jobs.json')
+        // element: <PrivateRouter><ViewDetails></ViewDetails></PrivateRouter>,
+        element: <ViewDetails></ViewDetails>,
+        loader: () => fetch('jobs.json')
       },
       {
         path: "/login",
@@ -60,8 +60,10 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <UserProvider>
-      <RouterProvider router={router} />
-    </UserProvider>
+    <div className='max-w-screen-xl mx-auto mt-2'>
+      <UserProvider>
+        <RouterProvider router={router} />
+      </UserProvider>
+    </div>
   </React.StrictMode>,
 )
